@@ -24,6 +24,7 @@ RSpec.describe Post, type: :model do
   end
 
   it "is invalid without a title" do
+    # binding.pry
     expect(missing_title).to be_invalid
   end
 
@@ -40,6 +41,7 @@ RSpec.describe Post, type: :model do
   end
 
   it "is invalid if not clickbait" do
+    # binding.pry
     expect(non_clickbait).to be_invalid
   end
 end
